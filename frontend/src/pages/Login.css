@@ -1,0 +1,138 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  background: var(--color-bg);
+}
+
+.login-brand {
+  background: linear-gradient(160deg, #163a2c 0%, #1b4b3a 100%);
+  color: var(--color-text-on-primary);
+  padding: 48px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.login-brand-copy h1 {
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.login-brand-copy p {
+  margin-top: 14px;
+  font-size: 15px;
+  color: rgba(246, 244, 238, 0.72);
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+.login-brand-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(246, 244, 238, 0.85);
+}
+
+.login-brand-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-brand-features li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.login-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.login-card-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.login-card-header p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-register {
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.login-register a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-register a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-brand {
+    padding: 36px 28px;
+    gap: 20px;
+  }
+
+  .login-brand-copy h1 {
+    font-size: 26px;
+  }
+
+  .login-brand-features {
+    display: none;
+  }
+
+  .login-panel {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 22px;
+  }
+}

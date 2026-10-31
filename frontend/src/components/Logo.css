@@ -1,0 +1,36 @@
+.re-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+}
+
+.re-logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--color-primary-light);
+}
+
+.re-logo.on-dark {
+  color: var(--color-text-on-primary);
+}
+
+.re-logo.on-dark .re-logo-mark {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.re-logo-word strong {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.re-logo.on-dark .re-logo-word strong {
+  color: var(--color-accent);
+}

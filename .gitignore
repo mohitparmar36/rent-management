@@ -1,0 +1,19 @@
+# .NET
+backend/**/bin/
+backend/**/obj/
+*.user
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# Local backups made during audits
+.backup/
